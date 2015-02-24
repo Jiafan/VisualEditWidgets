@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		900D83DB1A7CE82500018584 /* UIColor+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D01A7CE82500018584 /* UIColor+VE.m */; };
+		900D83DC1A7CE82500018584 /* UIColor+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D01A7CE82500018584 /* UIColor+VE.m */; };
+		900D83DD1A7CE82500018584 /* UIView+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D21A7CE82500018584 /* UIView+VE.m */; };
+		900D83DE1A7CE82500018584 /* UIView+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D21A7CE82500018584 /* UIView+VE.m */; };
+		900D83DF1A7CE82500018584 /* VEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D41A7CE82500018584 /* VEButton.m */; };
+		900D83E01A7CE82500018584 /* VEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D41A7CE82500018584 /* VEButton.m */; };
+		900D83E11A7CE82500018584 /* VETabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D61A7CE82500018584 /* VETabBar.m */; };
+		900D83E21A7CE82500018584 /* VETabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D61A7CE82500018584 /* VETabBar.m */; };
+		900D83E31A7CE82500018584 /* VETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D81A7CE82500018584 /* VETextField.m */; };
+		900D83E41A7CE82500018584 /* VETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83D81A7CE82500018584 /* VETextField.m */; };
+		900D83E51A7CE82500018584 /* VEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83DA1A7CE82500018584 /* VEViewController.m */; };
+		900D83E61A7CE82500018584 /* VEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900D83DA1A7CE82500018584 /* VEViewController.m */; };
+		903179051A6CAB1D00024997 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 903179041A6CAB1D00024997 /* main.m */; };
+		903179081A6CAB1D00024997 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 903179071A6CAB1D00024997 /* AppDelegate.m */; };
+		903179101A6CAB1D00024997 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9031790F1A6CAB1D00024997 /* Images.xcassets */; };
+		903179131A6CAB1D00024997 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903179111A6CAB1D00024997 /* LaunchScreen.xib */; };
+		9031791F1A6CAB1D00024997 /* VisualEditWidgetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9031791E1A6CAB1D00024997 /* VisualEditWidgetsTests.m */; };
+		9031792A1A6CAC3100024997 /* Phone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903179291A6CAC3100024997 /* Phone.storyboard */; };
+		9031792B1A6CAC3100024997 /* Phone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903179291A6CAC3100024997 /* Phone.storyboard */; };
+		904802061A72299F00666F07 /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 904802051A72299F00666F07 /* HomeScene.m */; };
+		904802071A72299F00666F07 /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 904802051A72299F00666F07 /* HomeScene.m */; };
+		9081E49F1AA46FE700880EFF /* UIImageView+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9081E49E1AA46FE700880EFF /* UIImageView+VE.m */; };
+		9081E4A01AA46FE700880EFF /* UIImageView+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9081E49E1AA46FE700880EFF /* UIImageView+VE.m */; };
+		9081E4A21AA470B400880EFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9081E4A11AA470B400880EFF /* QuartzCore.framework */; };
+		9096A9E31AA463EC00704095 /* UIImage+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9096A9E21AA463EC00704095 /* UIImage+VE.m */; };
+		9096A9E41AA463EC00704095 /* UIImage+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9096A9E21AA463EC00704095 /* UIImage+VE.m */; };
+		9096A9E71AA466DA00704095 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9096A9E51AA466DA00704095 /* Accelerate.framework */; };
+		9096A9E81AA466DA00704095 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9096A9E61AA466DA00704095 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		903179191A6CAB1D00024997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 903178F71A6CAB1D00024997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 903178FE1A6CAB1D00024997;
+			remoteInfo = VisualEditWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		900D83CF1A7CE82500018584 /* UIColor+VE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VE.h"; sourceTree = "<group>"; };
+		900D83D01A7CE82500018584 /* UIColor+VE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VE.m"; sourceTree = "<group>"; };
+		900D83D11A7CE82500018584 /* UIView+VE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VE.h"; sourceTree = "<group>"; };
+		900D83D21A7CE82500018584 /* UIView+VE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VE.m"; sourceTree = "<group>"; };
+		900D83D31A7CE82500018584 /* VEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEButton.h; sourceTree = "<group>"; };
+		900D83D41A7CE82500018584 /* VEButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEButton.m; sourceTree = "<group>"; };
+		900D83D51A7CE82500018584 /* VETabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VETabBar.h; sourceTree = "<group>"; };
+		900D83D61A7CE82500018584 /* VETabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VETabBar.m; sourceTree = "<group>"; };
+		900D83D71A7CE82500018584 /* VETextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VETextField.h; sourceTree = "<group>"; };
+		900D83D81A7CE82500018584 /* VETextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VETextField.m; sourceTree = "<group>"; };
+		900D83D91A7CE82500018584 /* VEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEViewController.h; sourceTree = "<group>"; };
+		900D83DA1A7CE82500018584 /* VEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEViewController.m; sourceTree = "<group>"; };
+		903178FF1A6CAB1D00024997 /* VisualEditWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualEditWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		903179031A6CAB1D00024997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		903179041A6CAB1D00024997 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		903179061A6CAB1D00024997 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		903179071A6CAB1D00024997 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9031790F1A6CAB1D00024997 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		903179121A6CAB1D00024997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		903179181A6CAB1D00024997 /* VisualEditWidgetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualEditWidgetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9031791D1A6CAB1D00024997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9031791E1A6CAB1D00024997 /* VisualEditWidgetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualEditWidgetsTests.m; sourceTree = "<group>"; };
+		903179291A6CAC3100024997 /* Phone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Phone.storyboard; sourceTree = "<group>"; };
+		904802041A72299F00666F07 /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
+		904802051A72299F00666F07 /* HomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScene.m; sourceTree = "<group>"; };
+		9070194B1AA186AE007BCD09 /* VEWidgets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEWidgets.h; sourceTree = "<group>"; };
+		9081E49D1AA46FE700880EFF /* UIImageView+VE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+VE.h"; sourceTree = "<group>"; };
+		9081E49E1AA46FE700880EFF /* UIImageView+VE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+VE.m"; sourceTree = "<group>"; };
+		9081E4A11AA470B400880EFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9096A9E11AA463EC00704095 /* UIImage+VE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VE.h"; sourceTree = "<group>"; };
+		9096A9E21AA463EC00704095 /* UIImage+VE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VE.m"; sourceTree = "<group>"; };
+		9096A9E51AA466DA00704095 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9096A9E61AA466DA00704095 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		903178FC1A6CAB1D00024997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9081E4A21AA470B400880EFF /* QuartzCore.framework in Frameworks */,
+				9096A9E71AA466DA00704095 /* Accelerate.framework in Frameworks */,
+				9096A9E81AA466DA00704095 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903179151A6CAB1D00024997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		900D83CE1A7CE82500018584 /* VEWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				9070194B1AA186AE007BCD09 /* VEWidgets.h */,
+				9096A9E11AA463EC00704095 /* UIImage+VE.h */,
+				9096A9E21AA463EC00704095 /* UIImage+VE.m */,
+				9081E49D1AA46FE700880EFF /* UIImageView+VE.h */,
+				9081E49E1AA46FE700880EFF /* UIImageView+VE.m */,
+				900D83CF1A7CE82500018584 /* UIColor+VE.h */,
+				900D83D01A7CE82500018584 /* UIColor+VE.m */,
+				900D83D11A7CE82500018584 /* UIView+VE.h */,
+				900D83D21A7CE82500018584 /* UIView+VE.m */,
+				900D83D31A7CE82500018584 /* VEButton.h */,
+				900D83D41A7CE82500018584 /* VEButton.m */,
+				900D83D51A7CE82500018584 /* VETabBar.h */,
+				900D83D61A7CE82500018584 /* VETabBar.m */,
+				900D83D71A7CE82500018584 /* VETextField.h */,
+				900D83D81A7CE82500018584 /* VETextField.m */,
+				900D83D91A7CE82500018584 /* VEViewController.h */,
+				900D83DA1A7CE82500018584 /* VEViewController.m */,
+			);
+			name = VEWidgets;
+			path = ../VEWidgets;
+			sourceTree = "<group>";
+		};
+		903178F61A6CAB1D00024997 = {
+			isa = PBXGroup;
+			children = (
+				9081E4A11AA470B400880EFF /* QuartzCore.framework */,
+				9096A9E51AA466DA00704095 /* Accelerate.framework */,
+				9096A9E61AA466DA00704095 /* CoreGraphics.framework */,
+				900D83CE1A7CE82500018584 /* VEWidgets */,
+				903179011A6CAB1D00024997 /* VisualEditWidgets */,
+				9031791B1A6CAB1D00024997 /* VisualEditWidgetsTests */,
+				903179001A6CAB1D00024997 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		903179001A6CAB1D00024997 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				903178FF1A6CAB1D00024997 /* VisualEditWidgets.app */,
+				903179181A6CAB1D00024997 /* VisualEditWidgetsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		903179011A6CAB1D00024997 /* VisualEditWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				903179061A6CAB1D00024997 /* AppDelegate.h */,
+				903179071A6CAB1D00024997 /* AppDelegate.m */,
+				904802041A72299F00666F07 /* HomeScene.h */,
+				904802051A72299F00666F07 /* HomeScene.m */,
+				903179291A6CAC3100024997 /* Phone.storyboard */,
+				9031790F1A6CAB1D00024997 /* Images.xcassets */,
+				903179111A6CAB1D00024997 /* LaunchScreen.xib */,
+				903179021A6CAB1D00024997 /* Supporting Files */,
+			);
+			path = VisualEditWidgets;
+			sourceTree = "<group>";
+		};
+		903179021A6CAB1D00024997 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				903179031A6CAB1D00024997 /* Info.plist */,
+				903179041A6CAB1D00024997 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9031791B1A6CAB1D00024997 /* VisualEditWidgetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9031791E1A6CAB1D00024997 /* VisualEditWidgetsTests.m */,
+				9031791C1A6CAB1D00024997 /* Supporting Files */,
+			);
+			path = VisualEditWidgetsTests;
+			sourceTree = "<group>";
+		};
+		9031791C1A6CAB1D00024997 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9031791D1A6CAB1D00024997 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		903178FE1A6CAB1D00024997 /* VisualEditWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 903179221A6CAB1D00024997 /* Build configuration list for PBXNativeTarget "VisualEditWidgets" */;
+			buildPhases = (
+				903178FB1A6CAB1D00024997 /* Sources */,
+				903178FC1A6CAB1D00024997 /* Frameworks */,
+				903178FD1A6CAB1D00024997 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisualEditWidgets;
+			productName = VisualEditWidgets;
+			productReference = 903178FF1A6CAB1D00024997 /* VisualEditWidgets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		903179171A6CAB1D00024997 /* VisualEditWidgetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 903179251A6CAB1D00024997 /* Build configuration list for PBXNativeTarget "VisualEditWidgetsTests" */;
+			buildPhases = (
+				903179141A6CAB1D00024997 /* Sources */,
+				903179151A6CAB1D00024997 /* Frameworks */,
+				903179161A6CAB1D00024997 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9031791A1A6CAB1D00024997 /* PBXTargetDependency */,
+			);
+			name = VisualEditWidgetsTests;
+			productName = VisualEditWidgetsTests;
+			productReference = 903179181A6CAB1D00024997 /* VisualEditWidgetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		903178F71A6CAB1D00024997 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VE;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = jiafan.net;
+				TargetAttributes = {
+					903178FE1A6CAB1D00024997 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					903179171A6CAB1D00024997 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 903178FE1A6CAB1D00024997;
+					};
+				};
+			};
+			buildConfigurationList = 903178FA1A6CAB1D00024997 /* Build configuration list for PBXProject "VisualEditWidgets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 903178F61A6CAB1D00024997;
+			productRefGroup = 903179001A6CAB1D00024997 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				903178FE1A6CAB1D00024997 /* VisualEditWidgets */,
+				903179171A6CAB1D00024997 /* VisualEditWidgetsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		903178FD1A6CAB1D00024997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9031792A1A6CAC3100024997 /* Phone.storyboard in Resources */,
+				903179131A6CAB1D00024997 /* LaunchScreen.xib in Resources */,
+				903179101A6CAB1D00024997 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903179161A6CAB1D00024997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9031792B1A6CAC3100024997 /* Phone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		903178FB1A6CAB1D00024997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900D83DF1A7CE82500018584 /* VEButton.m in Sources */,
+				903179081A6CAB1D00024997 /* AppDelegate.m in Sources */,
+				904802061A72299F00666F07 /* HomeScene.m in Sources */,
+				900D83DB1A7CE82500018584 /* UIColor+VE.m in Sources */,
+				9081E49F1AA46FE700880EFF /* UIImageView+VE.m in Sources */,
+				9096A9E31AA463EC00704095 /* UIImage+VE.m in Sources */,
+				900D83E51A7CE82500018584 /* VEViewController.m in Sources */,
+				900D83E31A7CE82500018584 /* VETextField.m in Sources */,
+				900D83E11A7CE82500018584 /* VETabBar.m in Sources */,
+				900D83DD1A7CE82500018584 /* UIView+VE.m in Sources */,
+				903179051A6CAB1D00024997 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903179141A6CAB1D00024997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904802071A72299F00666F07 /* HomeScene.m in Sources */,
+				900D83DE1A7CE82500018584 /* UIView+VE.m in Sources */,
+				900D83E41A7CE82500018584 /* VETextField.m in Sources */,
+				9031791F1A6CAB1D00024997 /* VisualEditWidgetsTests.m in Sources */,
+				900D83E01A7CE82500018584 /* VEButton.m in Sources */,
+				900D83E21A7CE82500018584 /* VETabBar.m in Sources */,
+				9096A9E41AA463EC00704095 /* UIImage+VE.m in Sources */,
+				9081E4A01AA46FE700880EFF /* UIImageView+VE.m in Sources */,
+				900D83DC1A7CE82500018584 /* UIColor+VE.m in Sources */,
+				900D83E61A7CE82500018584 /* VEViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9031791A1A6CAB1D00024997 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 903178FE1A6CAB1D00024997 /* VisualEditWidgets */;
+			targetProxy = 903179191A6CAB1D00024997 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		903179111A6CAB1D00024997 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				903179121A6CAB1D00024997 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		903179201A6CAB1D00024997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		903179211A6CAB1D00024997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		903179231A6CAB1D00024997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VisualEditWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		903179241A6CAB1D00024997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VisualEditWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		903179261A6CAB1D00024997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VisualEditWidgetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisualEditWidgets.app/VisualEditWidgets";
+			};
+			name = Debug;
+		};
+		903179271A6CAB1D00024997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VisualEditWidgetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisualEditWidgets.app/VisualEditWidgets";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		903178FA1A6CAB1D00024997 /* Build configuration list for PBXProject "VisualEditWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903179201A6CAB1D00024997 /* Debug */,
+				903179211A6CAB1D00024997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		903179221A6CAB1D00024997 /* Build configuration list for PBXNativeTarget "VisualEditWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903179231A6CAB1D00024997 /* Debug */,
+				903179241A6CAB1D00024997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		903179251A6CAB1D00024997 /* Build configuration list for PBXNativeTarget "VisualEditWidgetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903179261A6CAB1D00024997 /* Debug */,
+				903179271A6CAB1D00024997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 903178F71A6CAB1D00024997 /* Project object */;
+}
