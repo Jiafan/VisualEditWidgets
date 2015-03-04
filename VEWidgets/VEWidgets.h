@@ -12,7 +12,6 @@
 
     #import "UIColor+VE.h"
     #import "UIView+VE.h"
-    #import "VEButton.h"
     #import "VETabBar.h"
     #import "VETextField.h"
     #import "VEViewController.h"
