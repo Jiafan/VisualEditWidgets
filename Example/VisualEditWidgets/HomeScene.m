@@ -7,11 +7,10 @@
 //
 
 #import "HomeScene.h"
-#import "VEButton.h"
 #import "UIImageView+VE.h"
 @interface HomeScene ()
 @property (weak, nonatomic) IBOutlet UIImageView *img;
-- (IBAction)goAction:(VEButton *)sender;
+- (IBAction)goAction:(UIButton *)sender;
 
 @end
 
@@ -40,7 +39,7 @@
 }
 */
 
-- (IBAction)goAction:(VEButton *)sender {
-    [self.img blurWith:0.1];
+- (IBAction)goAction:(UIButton *)sender {
+    [self.img blurWith:5];
 }
 @end

@@ -16,6 +16,6 @@
     [self.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    self.image = [img blurWith:0.1];
+    self.image = [img blurWith:degree];
 }
 @end
