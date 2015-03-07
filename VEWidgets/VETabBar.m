@@ -12,11 +12,11 @@
 
 - (void)setHidden:(BOOL)hidden{
     if (hidden != self.hidden) {
-        __block CGRect frame = self.frame;
-        float offset = (hidden?1:-1)*frame.size.height;
+        CGFloat supHeight = self.superview.bounds.size.height;
+        CGRect frame = self.frame;
+        frame.origin.y = hidden?supHeight:supHeight-frame.size.height;
         if (hidden) {
             [UIView animateWithDuration:0.5 animations:^{
-                frame.origin.y += offset;
                 self.frame = frame;
             } completion:^(BOOL finished) {
                 [super setHidden:hidden];
@@ -24,7 +24,6 @@
         }else{
             [super setHidden:hidden];
             [UIView animateWithDuration:0.5 animations:^{
-                frame.origin.y += offset;
                 self.frame = frame;
             }];
         }

@@ -11,6 +11,7 @@
 @interface HomeScene ()
 @property (weak, nonatomic) IBOutlet UIImageView *img;
 - (IBAction)goAction:(UIButton *)sender;
+- (IBAction)hideTabBarAction:(id)sender;
 
 @end
 
@@ -41,5 +42,9 @@
 
 - (IBAction)goAction:(UIButton *)sender {
     [self.img blurWith:5];
+}
+
+- (IBAction)hideTabBarAction:(id)sender {
+    self.tabBarController.tabBar.hidden = YES;
 }
 @end
