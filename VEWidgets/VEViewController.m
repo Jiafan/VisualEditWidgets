@@ -17,9 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBlankAction:)];
-    tgr.delegate = self;
-    [self.view addGestureRecognizer:tgr];
+    if (self.editable) {
+        UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBlankAction:)];
+        tgr.delegate = self;
+        [self.view addGestureRecognizer:tgr];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
