@@ -33,6 +33,8 @@
 		9096A9E41AA463EC00704095 /* UIImage+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9096A9E21AA463EC00704095 /* UIImage+VE.m */; };
 		9096A9E71AA466DA00704095 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9096A9E51AA466DA00704095 /* Accelerate.framework */; };
 		9096A9E81AA466DA00704095 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9096A9E61AA466DA00704095 /* CoreGraphics.framework */; };
+		90F8E9A51AAF24AC00CAC0CA /* VETableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E9A41AAF24AC00CAC0CA /* VETableView.m */; };
+		90F8E9A61AAF24AC00CAC0CA /* VETableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E9A41AAF24AC00CAC0CA /* VETableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		9096A9E21AA463EC00704095 /* UIImage+VE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VE.m"; sourceTree = "<group>"; };
 		9096A9E51AA466DA00704095 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		9096A9E61AA466DA00704095 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90F8E9A31AAF24AC00CAC0CA /* VETableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VETableView.h; sourceTree = "<group>"; };
+		90F8E9A41AAF24AC00CAC0CA /* VETableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VETableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				900D83D61A7CE82500018584 /* VETabBar.m */,
 				900D83D71A7CE82500018584 /* VETextField.h */,
 				900D83D81A7CE82500018584 /* VETextField.m */,
+				90F8E9A31AAF24AC00CAC0CA /* VETableView.h */,
+				90F8E9A41AAF24AC00CAC0CA /* VETableView.m */,
 				900D83D91A7CE82500018584 /* VEViewController.h */,
 				900D83DA1A7CE82500018584 /* VEViewController.m */,
 			);
@@ -126,12 +132,10 @@
 		903178F61A6CAB1D00024997 = {
 			isa = PBXGroup;
 			children = (
-				9081E4A11AA470B400880EFF /* QuartzCore.framework */,
-				9096A9E51AA466DA00704095 /* Accelerate.framework */,
-				9096A9E61AA466DA00704095 /* CoreGraphics.framework */,
 				900D83CE1A7CE82500018584 /* VEWidgets */,
 				903179011A6CAB1D00024997 /* VisualEditWidgets */,
 				9031791B1A6CAB1D00024997 /* VisualEditWidgetsTests */,
+				90F8E9A21AAF245B00CAC0CA /* Frameworks */,
 				903179001A6CAB1D00024997 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -184,6 +188,16 @@
 				9031791D1A6CAB1D00024997 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90F8E9A21AAF245B00CAC0CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9081E4A11AA470B400880EFF /* QuartzCore.framework */,
+				9096A9E51AA466DA00704095 /* Accelerate.framework */,
+				9096A9E61AA466DA00704095 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +309,7 @@
 				9096A9E31AA463EC00704095 /* UIImage+VE.m in Sources */,
 				900D83E51A7CE82500018584 /* VEViewController.m in Sources */,
 				900D83E31A7CE82500018584 /* VETextField.m in Sources */,
+				90F8E9A51AAF24AC00CAC0CA /* VETableView.m in Sources */,
 				900D83E11A7CE82500018584 /* VETabBar.m in Sources */,
 				900D83DD1A7CE82500018584 /* UIView+VE.m in Sources */,
 				903179051A6CAB1D00024997 /* main.m in Sources */,
@@ -309,6 +324,7 @@
 				900D83DE1A7CE82500018584 /* UIView+VE.m in Sources */,
 				900D83E41A7CE82500018584 /* VETextField.m in Sources */,
 				9031791F1A6CAB1D00024997 /* VisualEditWidgetsTests.m in Sources */,
+				90F8E9A61AAF24AC00CAC0CA /* VETableView.m in Sources */,
 				900D83E21A7CE82500018584 /* VETabBar.m in Sources */,
 				9096A9E41AA463EC00704095 /* UIImage+VE.m in Sources */,
 				9081E4A01AA46FE700880EFF /* UIImageView+VE.m in Sources */,
