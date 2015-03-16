@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="U4D-8L-jbt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="U4D-8L-jbt">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -163,13 +163,20 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw0-ed-D81">
-                                <rect key="frame" x="16" y="89" width="288" height="30"/>
+                                <rect key="frame" x="19" y="80" width="282" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gAi-kh-gJg"/>
                                 </constraints>
                                 <state key="normal" title="操作标签栏">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="configTabBar:" destination="mlK-pJ-Dr9" eventType="touchUpInside" id="EJ0-7p-Y6D"/>
                                 </connections>
@@ -196,11 +203,18 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="8NY-ZQ-98v">
                                 <rect key="frame" x="98" y="324" width="125" height="93"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AH-Uw-2XU">
-                                <rect key="frame" x="16" y="118" width="282" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AH-Uw-2XU">
+                                <rect key="frame" x="19" y="118" width="282" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="隐藏标签栏">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="hideTabBarAction:" destination="mlK-pJ-Dr9" eventType="touchUpInside" id="hPc-db-sSe"/>
                                 </connections>
@@ -209,20 +223,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2QK-gP-TOx" secondAttribute="trailing" constant="16" id="2mi-w7-d0B"/>
-                            <constraint firstAttribute="trailing" secondItem="Jw0-ed-D81" secondAttribute="trailing" constant="16" id="36w-z0-Nxo"/>
+                            <constraint firstAttribute="trailing" secondItem="Jw0-ed-D81" secondAttribute="trailing" constant="19" id="36w-z0-Nxo"/>
                             <constraint firstItem="7ay-NR-Vc7" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="16" id="4BA-Ol-Er7"/>
                             <constraint firstAttribute="trailing" secondItem="Tcz-FA-PJY" secondAttribute="trailing" constant="16" id="4sp-B2-Awx"/>
                             <constraint firstAttribute="trailing" secondItem="Qns-Lf-Mnv" secondAttribute="trailing" constant="16" id="7TR-Np-C0A"/>
                             <constraint firstItem="Qns-Lf-Mnv" firstAttribute="top" secondItem="rQG-8e-6eG" secondAttribute="top" constant="156" id="ChG-VE-yhl"/>
+                            <constraint firstAttribute="trailing" secondItem="9AH-Uw-2XU" secondAttribute="trailing" constant="19" id="IvR-Ee-dms"/>
                             <constraint firstItem="Qns-Lf-Mnv" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="16" id="KrN-XA-0Cj"/>
                             <constraint firstItem="Tcz-FA-PJY" firstAttribute="top" secondItem="Qns-Lf-Mnv" secondAttribute="bottom" constant="14" id="RxU-XB-Vrm"/>
                             <constraint firstItem="2QK-gP-TOx" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="16" id="SP9-G6-oPl"/>
                             <constraint firstItem="Tcz-FA-PJY" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="16" id="SSg-zh-8Hj"/>
-                            <constraint firstItem="Jw0-ed-D81" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="16" id="XUp-Ii-TVT"/>
+                            <constraint firstItem="9AH-Uw-2XU" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="19" id="Tfm-H7-HDj"/>
+                            <constraint firstItem="Jw0-ed-D81" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="19" id="XUp-Ii-TVT"/>
                             <constraint firstItem="2QK-gP-TOx" firstAttribute="top" secondItem="rQG-8e-6eG" secondAttribute="top" constant="272" id="bH4-ij-ux4"/>
-                            <constraint firstItem="Jw0-ed-D81" firstAttribute="top" secondItem="rQG-8e-6eG" secondAttribute="top" constant="89" id="cVS-t9-mj5"/>
+                            <constraint firstItem="Jw0-ed-D81" firstAttribute="top" secondItem="rQG-8e-6eG" secondAttribute="top" constant="80" id="cVS-t9-mj5"/>
                             <constraint firstAttribute="bottom" secondItem="7ay-NR-Vc7" secondAttribute="bottom" constant="104" id="exr-nR-W6p"/>
                             <constraint firstAttribute="trailing" secondItem="7ay-NR-Vc7" secondAttribute="trailing" constant="16" id="lXC-8I-bWa"/>
+                            <constraint firstItem="9AH-Uw-2XU" firstAttribute="top" secondItem="rQG-8e-6eG" secondAttribute="top" constant="118" id="pg5-lW-a3E"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="RIT-qm-C2k"/>
