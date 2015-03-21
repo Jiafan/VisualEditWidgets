@@ -49,7 +49,7 @@
         self.titleLAB = titleLab;
         CGRect frame = self.leftView.frame;
         frame.size.width += 0.1*self.bounds.size.height+titleLab.frame.size.width;
-        self.leftView =titleLab;
+        [self.leftView addSubview:titleLab];
         self.leftView.frame = frame;
         _title = title;
     }
