@@ -8,8 +8,10 @@
 
 #import "HomeScene.h"
 #import "UIImageView+VE.h"
+#import "VETextField.h"
 @interface HomeScene ()
 @property (weak, nonatomic) IBOutlet UIImageView *img;
+@property (weak, nonatomic) IBOutlet VETextField *phoneTF;
 - (IBAction)goAction:(UIButton *)sender;
 - (IBAction)hideTabBarAction:(id)sender;
 
@@ -45,6 +47,7 @@
 }
 
 - (IBAction)hideTabBarAction:(id)sender {
-    self.tabBarController.tabBar.hidden = YES;
+//    self.tabBarController.tabBar.hidden = YES;
+    self.phoneTF.title = [NSString stringWithFormat:@"%@:",self.phoneTF.text];
 }
 @end

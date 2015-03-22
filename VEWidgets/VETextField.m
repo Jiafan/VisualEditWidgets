@@ -24,14 +24,23 @@
             self.leftViewMode = UITextFieldViewModeAlways;
             self.leftView = bg;
         }
-        UIImageView *liv = [[UIImageView alloc] initWithFrame:CGRectMake(self.leftView.frame.size.width+0.1*self.bounds.size.height, 0.2*self.bounds.size.height, 0.6*self.bounds.size.height, 0.6*self.bounds.size.height)];
-        liv.image = icon;
-        self.iconIV = liv;
-        [self.leftView addSubview:liv];
         CGRect frame = self.leftView.frame;
-        frame.size.width += 2*0.1*self.bounds.size.height+liv.frame.size.width;
-        self.leftView.frame = frame;
+        if (!self.iconIV) {
+            UIImageView *liv = [[UIImageView alloc] initWithFrame:CGRectMake(self.leftView.frame.size.width+0.1*self.bounds.size.height, 0.2*self.bounds.size.height, 0.6*self.bounds.size.height, 0.6*self.bounds.size.height)];
+            [self.leftView addSubview:liv];
+            self.iconIV = liv;
+            frame.size.width += 2*0.1*self.bounds.size.height+liv.frame.size.width;
+            self.leftView.frame = frame;
+        }
+        self.iconIV.image = icon;
         _icon = icon;
+    }else if(self.iconIV){
+        CGRect frame = self.leftView.frame;
+        frame.size.width -= 2*0.1*self.bounds.size.height+self.iconIV.frame.size.width;
+        self.leftView.frame = frame;
+        self.icon = nil;
+        [self.iconIV removeFromSuperview];
+        self.iconIV = nil;
     }
 }
 - (void)setTitle:(NSString *)title
@@ -43,14 +52,25 @@
             self.leftView = bg;
         }
         CGSize titleSize = [title sizeWithAttributes:@{NSFontAttributeName:self.font}];
-        UILabel *titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0.1*self.bounds.size.height+self.leftView.frame.size.width, 0, titleSize.width, self.frame.size.height)];
-        titleLab.font = self.font;
-        titleLab.text = title;
-        self.titleLAB = titleLab;
-        CGRect frame = self.leftView.frame;
-        frame.size.width += 0.1*self.bounds.size.height+titleLab.frame.size.width;
-        [self.leftView addSubview:titleLab];
-        self.leftView.frame = frame;
+        
+        if (!self.titleLAB) {
+            CGRect frame = CGRectMake(0.1*self.bounds.size.height+self.leftView.frame.size.width, 0, titleSize.width, self.frame.size.height);
+            UILabel *titleLab = [[UILabel alloc] initWithFrame:frame];
+            self.titleLAB = titleLab;
+            frame = self.leftView.frame;
+            frame.size.width += 0.1*self.bounds.size.height+self.titleLAB.frame.size.width;
+            [self.leftView addSubview:self.titleLAB];
+            self.leftView.frame = frame;
+        }else{
+            CGRect frame = CGRectMake(self.leftView.frame.size.width-self.titleLAB.frame.size.width, 0, titleSize.width, self.frame.size.height);
+            CGFloat offset = frame.size.width - self.titleLAB.frame.size.width;
+            self.titleLAB.frame = frame;
+            frame = self.leftView.frame;
+            frame.size.width += offset;
+            self.leftView.frame = frame;
+        }
+        self.titleLAB.font = self.font;
+        self.titleLAB.text = title;
         _title = title;
     }
 }

@@ -248,6 +248,7 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="img" destination="8NY-ZQ-98v" id="2yh-Xv-ROx"/>
+                        <outlet property="phoneTF" destination="Qns-Lf-Mnv" id="5oW-Qf-1dm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2c6-13-r6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
