@@ -42,11 +42,12 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     }
 }
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     if (self.editable && !self.scollerForEidt) {
-        UIScrollView *scoller = [[UIScrollView alloc] initWithFrame:self.view.frame];
+        UIScrollView *scoller = [[UIScrollView alloc] initWithFrame:self.view.superview.bounds];
         scoller.backgroundColor = self.view.backgroundColor;
         [self.view.superview addSubview:scoller];
         self.scollerForEidt = scoller;
