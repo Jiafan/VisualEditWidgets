@@ -26,6 +26,8 @@
 		9031792B1A6CAC3100024997 /* Phone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903179291A6CAC3100024997 /* Phone.storyboard */; };
 		904802061A72299F00666F07 /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 904802051A72299F00666F07 /* HomeScene.m */; };
 		904802071A72299F00666F07 /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 904802051A72299F00666F07 /* HomeScene.m */; };
+		907C508F1AC2639B0093DD67 /* VENavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C508E1AC2639B0093DD67 /* VENavigationController.m */; };
+		907C50901AC2639B0093DD67 /* VENavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C508E1AC2639B0093DD67 /* VENavigationController.m */; };
 		9081E49F1AA46FE700880EFF /* UIImageView+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9081E49E1AA46FE700880EFF /* UIImageView+VE.m */; };
 		9081E4A01AA46FE700880EFF /* UIImageView+VE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9081E49E1AA46FE700880EFF /* UIImageView+VE.m */; };
 		9081E4A21AA470B400880EFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9081E4A11AA470B400880EFF /* QuartzCore.framework */; };
@@ -72,6 +74,8 @@
 		904802041A72299F00666F07 /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
 		904802051A72299F00666F07 /* HomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScene.m; sourceTree = "<group>"; };
 		9070194B1AA186AE007BCD09 /* VEWidgets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEWidgets.h; sourceTree = "<group>"; };
+		907C508D1AC2639B0093DD67 /* VENavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENavigationController.h; sourceTree = "<group>"; };
+		907C508E1AC2639B0093DD67 /* VENavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENavigationController.m; sourceTree = "<group>"; };
 		9081E49D1AA46FE700880EFF /* UIImageView+VE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+VE.h"; sourceTree = "<group>"; };
 		9081E49E1AA46FE700880EFF /* UIImageView+VE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+VE.m"; sourceTree = "<group>"; };
 		9081E4A11AA470B400880EFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -124,6 +128,8 @@
 				90F8E9A41AAF24AC00CAC0CA /* VETableView.m */,
 				900D83D91A7CE82500018584 /* VEViewController.h */,
 				900D83DA1A7CE82500018584 /* VEViewController.m */,
+				907C508D1AC2639B0093DD67 /* VENavigationController.h */,
+				907C508E1AC2639B0093DD67 /* VENavigationController.m */,
 			);
 			name = VEWidgets;
 			path = ../VEWidgets;
@@ -308,6 +314,7 @@
 				9081E49F1AA46FE700880EFF /* UIImageView+VE.m in Sources */,
 				9096A9E31AA463EC00704095 /* UIImage+VE.m in Sources */,
 				900D83E51A7CE82500018584 /* VEViewController.m in Sources */,
+				907C508F1AC2639B0093DD67 /* VENavigationController.m in Sources */,
 				900D83E31A7CE82500018584 /* VETextField.m in Sources */,
 				90F8E9A51AAF24AC00CAC0CA /* VETableView.m in Sources */,
 				900D83E11A7CE82500018584 /* VETabBar.m in Sources */,
@@ -326,6 +333,7 @@
 				9031791F1A6CAB1D00024997 /* VisualEditWidgetsTests.m in Sources */,
 				90F8E9A61AAF24AC00CAC0CA /* VETableView.m in Sources */,
 				900D83E21A7CE82500018584 /* VETabBar.m in Sources */,
+				907C50901AC2639B0093DD67 /* VENavigationController.m in Sources */,
 				9096A9E41AA463EC00704095 /* UIImage+VE.m in Sources */,
 				9081E4A01AA46FE700880EFF /* UIImageView+VE.m in Sources */,
 				900D83DC1A7CE82500018584 /* UIColor+VE.m in Sources */,
