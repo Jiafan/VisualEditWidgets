@@ -57,9 +57,11 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    if (self.editable) {
+    if (!self.editable && self.scollerForEidt) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+        [self.scollerForEidt.superview addSubview:self.view];
+        [self.scollerForEidt removeFromSuperview];
     }
 }
 #pragma mark - Keyboard
