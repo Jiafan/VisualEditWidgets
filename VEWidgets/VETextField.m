@@ -51,7 +51,15 @@
             self.leftViewMode = UITextFieldViewModeAlways;
             self.leftView = bg;
         }
-        CGSize titleSize = [title sizeWithAttributes:@{NSFontAttributeName:self.font}];
+        CGSize titleSize;
+        if ([[[UIDevice currentDevice] systemVersion] floatValue]>7.0) {
+            titleSize = [title sizeWithAttributes:@{NSFontAttributeName:self.font}];
+        }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            titleSize = [title sizeWithFont:self.font];
+#pragma clang diagnostic pop
+        }
         
         if (!self.titleLAB) {
             CGRect frame = CGRectMake(0.1*self.bounds.size.height+self.leftView.frame.size.width, 0, titleSize.width, self.frame.size.height);
