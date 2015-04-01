@@ -29,3 +29,8 @@ VETabBar
 	继承自：UITabBar
 	扩展功能
 		1、隐藏舒缓动画：给 setHidden 添加动画
+
+UIColor+VE
+	扩展自：UIColor
+	扩展功能
+		1、16进制颜色：实现16进制颜色值实例化 UIColor 对象
