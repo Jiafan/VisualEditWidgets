@@ -53,16 +53,24 @@
         self.scollerForEidt = scoller;
         [self.scollerForEidt addSubview:self.view];
     }
+    self.scollerForEidt.contentOffset = CGPointZero;
+    self.scollerForEidt.contentSize = self.view.frame.size;
 }
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    if (self.editable) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+    }
     if (!self.editable && self.scollerForEidt) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
         [self.scollerForEidt.superview addSubview:self.view];
         [self.scollerForEidt removeFromSuperview];
     }
+    self.scollerForEidt.contentOffset = CGPointZero;
+    self.scollerForEidt.contentSize = self.view.frame.size;
 }
 #pragma mark - Keyboard
 - (void)keyboardWillShow:(NSNotification *)notification
