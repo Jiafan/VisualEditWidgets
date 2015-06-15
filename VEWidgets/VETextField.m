@@ -173,7 +173,6 @@
             return YES;
         }
     }else{
-        [self becomeFirstResponder];
         [self shake:10 withDelta:5 andSpeed:0.04 shakeDirection:ShakeDirectionHorizontal];
         return NO;
     }
