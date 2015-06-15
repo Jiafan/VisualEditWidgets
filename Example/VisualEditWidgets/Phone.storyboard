@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="U4D-8L-jbt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="U4D-8L-jbt">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -125,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="11位手机号/邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qns-Lf-Mnv" customClass="VETextField">
-                                <rect key="frame" x="16" y="156" width="288" height="44"/>
+                                <rect key="frame" x="16" y="156" width="164" height="44"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="r3c-Cs-v8s"/>
@@ -226,7 +226,7 @@
                             <constraint firstAttribute="trailing" secondItem="Jw0-ed-D81" secondAttribute="trailing" constant="19" id="36w-z0-Nxo"/>
                             <constraint firstItem="7ay-NR-Vc7" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="16" id="4BA-Ol-Er7"/>
                             <constraint firstAttribute="trailing" secondItem="Tcz-FA-PJY" secondAttribute="trailing" constant="16" id="4sp-B2-Awx"/>
-                            <constraint firstAttribute="trailing" secondItem="Qns-Lf-Mnv" secondAttribute="trailing" constant="16" id="7TR-Np-C0A"/>
+                            <constraint firstAttribute="trailing" secondItem="Qns-Lf-Mnv" secondAttribute="trailing" constant="140" id="7TR-Np-C0A"/>
                             <constraint firstItem="Qns-Lf-Mnv" firstAttribute="top" secondItem="rQG-8e-6eG" secondAttribute="top" constant="156" id="ChG-VE-yhl"/>
                             <constraint firstAttribute="trailing" secondItem="9AH-Uw-2XU" secondAttribute="trailing" constant="19" id="IvR-Ee-dms"/>
                             <constraint firstItem="Qns-Lf-Mnv" firstAttribute="leading" secondItem="rQG-8e-6eG" secondAttribute="leading" constant="16" id="KrN-XA-0Cj"/>

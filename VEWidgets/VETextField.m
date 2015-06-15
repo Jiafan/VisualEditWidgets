@@ -124,66 +124,45 @@
     _leftWidth = leftWidth;
 }
 
-//- (void)awakeFromNib
-//{
-//    self.layer.masksToBounds = YES;
-//    self.layer.cornerRadius = 4.0;
-//    self.layer.borderWidth = 1.0;
-//}
-- (void)shake:(int)times withDelta:(CGFloat)delta andSpeed:(NSTimeInterval)interval shakeDirection:(ShakeDirection)shakeDirection
+- (void)shake:(NSUInteger)times interval:(float)interval margin:(int)margin
 {
-    [self _shake:times direction:1 currentTimes:0 withDelta:delta andSpeed:interval shakeDirection:shakeDirection];
-}
-- (void)_shake:(int)times direction:(int)direction currentTimes:(int)current withDelta:(CGFloat)delta andSpeed:(NSTimeInterval)interval shakeDirection:(ShakeDirection)shakeDirection
-{
-    [UIView animateWithDuration:interval animations:^{
-        self.transform = (shakeDirection == ShakeDirectionHorizontal) ? CGAffineTransformMakeTranslation(delta * direction, 0) : CGAffineTransformMakeTranslation(0, delta * direction);
-    } completion:^(BOOL finished) {
-        if(current >= times) {
-            [UIView animateWithDuration:interval animations:^{
-                self.transform = CGAffineTransformIdentity;
-            }];
-            return;
-        }
-        [self _shake:(times - 1)
-           direction:direction * -1
-        currentTimes:current + 1
-           withDelta:delta
-            andSpeed:interval
-      shakeDirection:shakeDirection];
-    }];
+    --times;
+    [UIView animateWithDuration:interval
+                     animations:^{
+                         int m = margin*(1-2*(times%2));
+                         self.transform = (self.direction == VESD_Horizontal)?CGAffineTransformMakeTranslation(m, 0):CGAffineTransformMakeTranslation(0, m);
+                     }
+                     completion:^(BOOL finished) {
+                         if(times) {
+                             [self shake:times interval:interval margin:margin];
+                         }
+                         else {
+                             [UIView animateWithDuration:0.5*interval animations:^{
+                                 self.transform = CGAffineTransformIdentity;
+                             }];
+                             return ;
+                         }
+                     }];
 }
 
-- (BOOL)selfReview
+- (BOOL)review
 {
-    if (self.text && self.text.length) {
-        
-        if (self.regularExpression && self.regularExpression.length) {
-            NSError *error = NULL;
-            
-            NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:self.regularExpression
-                                                                                   options:NSRegularExpressionCaseInsensitive
-                                                                                     error:&error];
-            NSUInteger matchedNum = [regex numberOfMatchesInString:self.text options:NSMatchingReportProgress range:NSMakeRange(0, self.text.length)];
-            if (!matchedNum>0) {
-                [self shake:10 withDelta:5 andSpeed:0.04 shakeDirection:ShakeDirectionHorizontal];
-            }
-            return (matchedNum>0);
-        }else{
-            return YES;
-        }
-    }else{
-        [self shake:10 withDelta:5 andSpeed:0.04 shakeDirection:ShakeDirectionHorizontal];
-        return NO;
-    }
+    if (!self.text || !self.text.length) return NO;
+    if (!self.regularExpression && !self.regularExpression.length) return YES;
+    NSError *error = NULL;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:self.regularExpression
+                                                                           options:NSRegularExpressionCaseInsensitive
+                                                                             error:&error];
+    NSUInteger matchedNum = [regex numberOfMatchesInString:self.text options:NSMatchingReportProgress range:NSMakeRange(0, self.text.length)];
+    return matchedNum>0;
 }
-- (BOOL)selfReviewAndActive
+
+- (BOOL)selfReview:(VEReviewAction)options
 {
-    BOOL isMeet = [self selfReview];
-    if (!isMeet) {
-        [self becomeFirstResponder];
-    }
-    return isMeet;
+    if([self review]) return YES;
+    if (options & VERA_Shake) [self  shake:8 interval:1.0/DefaultSpeed margin:ShakeMargin];
+    if (options & VERA_Active) [self becomeFirstResponder];
+    return NO;
 }
 
 /*

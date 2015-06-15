@@ -43,7 +43,9 @@
 */
 
 - (IBAction)goAction:(UIButton *)sender {
-    [self.img blurWith:5];
+//    [self.img blurWith:5];
+    
+    [self.phoneTF selfReview:VERA_Shake|VERA_Active];
 }
 
 - (IBAction)hideTabBarAction:(id)sender {
