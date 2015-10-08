@@ -8,8 +8,14 @@
 
 #import "VEViewController.h"
 #import "UIView+VE.h"
+
+@interface VEBottomEditScrollView : UIScrollView
+
+@end
+@implementation VEBottomEditScrollView
+@end
 @interface VEViewController ()<UIGestureRecognizerDelegate,UITextFieldDelegate>
-@property(weak, nonatomic)UIScrollView *scollerForEidt;
+@property(weak, nonatomic)VEBottomEditScrollView *scollerForEidt;
 
 @end
 
@@ -46,8 +52,13 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    if ([self.view.superview isKindOfClass:[VEBottomEditScrollView class]]) {
+        UIView *superView=self.view.superview.superview;
+        [self.view.superview removeFromSuperview];
+        [superView addSubview:self.view];
+    }
     if (self.editable && !self.scollerForEidt) {
-        UIScrollView *scoller = [[UIScrollView alloc] initWithFrame:self.view.superview.bounds];
+        VEBottomEditScrollView *scoller = [[VEBottomEditScrollView alloc] initWithFrame:self.view.superview.bounds];
         scoller.backgroundColor = self.view.backgroundColor;
         [self.view.superview addSubview:scoller];
         self.scollerForEidt = scoller;
