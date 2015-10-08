@@ -4,7 +4,8 @@
 
 诸如点击空白处键盘收起，现在只需在storyboard 里面给 ViewController 编辑一个属性 editable 为 true ，就可达成了。
 
-集成使用的时候可以有两种姿势：
+### 集成使用的时候可以有两种姿势：
+
 1. 使用Cocoapods的同学可以：pod 'VisualEditWidgets', '~> 0.3.3' 
 2. 喜欢自己管理源码的同学可以直接下载源代码，讲 VEWidgets 目录加入项目就行。
 
