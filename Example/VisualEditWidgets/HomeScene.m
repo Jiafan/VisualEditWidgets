@@ -49,7 +49,6 @@
 }
 
 - (IBAction)hideTabBarAction:(id)sender {
-//    self.tabBarController.tabBar.hidden = YES;
-    self.phoneTF.title = [NSString stringWithFormat:@"%@:",self.phoneTF.text];
+    self.tabBarController.tabBar.hidden = YES;
 }
 @end
