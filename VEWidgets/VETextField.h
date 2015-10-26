@@ -31,6 +31,8 @@ typedef NS_OPTIONS(NSUInteger, VEReviewAction){
 @property (nonatomic, assign)float leftInset;
 @property (nonatomic, assign)float leftWidth;
 @property (nonatomic, assign)NSUInteger shakeTimes;
+@property (nonatomic, assign)float rightInset;
+@property (nonatomic, assign)float rightWidth;
 
 - (BOOL)selfReview:(VEReviewAction)options;
 

@@ -124,6 +124,41 @@
     _leftWidth = leftWidth;
 }
 
+- (void)setRightInset:(float)rightInset
+{
+    if (rightInset) {
+        if (self.rightView) {
+            for (UIView *view in self.rightView.subviews){
+                CGRect frame = view.frame;
+                frame.origin.x += rightInset;
+                view.frame = frame;
+            }
+        }else{
+            UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, 0, rightInset, self.bounds.size.height)];
+            self.rightViewMode = UITextFieldViewModeAlways;
+            self.rightView = bg;
+        }
+    }
+    _rightInset = rightInset;
+}
+
+- (void)setRightWidth:(float)rightWidth
+{
+    if (rightWidth) {
+        if (self.rightView) {
+            CGRect frame = self.rightView.frame;
+            frame.size.width = rightWidth;
+            self.rightView.frame = frame;
+        }else{
+            UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, 0, rightWidth, self.bounds.size.height)];
+            self.rightViewMode = UITextFieldViewModeAlways;
+            self.rightView = bg;
+        }
+    }
+    _rightWidth = rightWidth;
+}
+
+
 - (void)shake:(NSUInteger)times interval:(float)interval margin:(int)margin
 {
     --times;
