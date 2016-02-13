@@ -6,7 +6,7 @@
 
 ### 集成使用的时候可以有两种姿势：
 
-1. 使用Cocoapods的同学可以：pod 'VisualEditWidgets', '~> 0.3.3' 
+1. 使用CocoaPods的同学可以：pod 'VisualEditWidgets', '~> 0.3.3' 
 2. 喜欢自己管理源码的同学可以直接下载源代码，讲 VEWidgets 目录加入项目就行。
 
 
